@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
-import { ThemeContext } from '../../pages'
+import { ThemeContext } from '../Theme'
 
 const Layout = ({ children }) => {
 
