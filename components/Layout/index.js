@@ -1,14 +1,15 @@
 import React from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
+import Theme from '../Theme'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, darkMode, setDarkMode }) => {
     return (
-        <div>
-            <Header />
+        <>
+            <Header setDarkMode={setDarkMode} darkMode={darkMode}/>
             {children}
             <Footer />
-        </div>
+        </>
     )
 }
 

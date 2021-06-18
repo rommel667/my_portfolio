@@ -5,8 +5,8 @@ const Logo = () => {
     return (
         <div className="">
             <Link href="/">
-                <a className="flex flex-row items-center gap-2">
-                    <h3 className="text-gray-700 font-semibold">Rommel V.</h3>
+                <a>
+                    <h3 className="text-gray-600 font-semibold dark:text-gray-400">Rommel V.</h3>
                 </a>
             </Link>
         </div>

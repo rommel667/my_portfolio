@@ -1,13 +1,15 @@
 import React from 'react'
 import Logo from './Logo'
 import Menu from './Menu'
+import Mode from './Mode'
 
 
-const Header = () => {
+const Header = ({ darkMode, setDarkMode }) => {
     return (
-        <div className="flex flex-row p-6 items-center justify-between">
+        <div className="flex flex-row p-6 items-center justify-between dark:bg-gray-700">
             <Logo />
             <Menu />
+            <Mode darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
     )
 }
