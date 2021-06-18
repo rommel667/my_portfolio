@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Modal from './Modal'
+import ImagesCarousel from './ImagesCarousel'
 
 const Project = ({ title, description, images, stacks, github, website }) => {
 
@@ -29,7 +30,7 @@ const Project = ({ title, description, images, stacks, github, website }) => {
                     closeModal={() => setShowModal(false)}
                     modalTitle={title}
                 >
-                    <h1>Hello</h1>
+                    <ImagesCarousel images={images} />
                 </Modal>
             </div>
 

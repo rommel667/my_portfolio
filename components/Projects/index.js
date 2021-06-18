@@ -5,7 +5,7 @@ import Project from './Project'
 
 const Projects = () => {
     return (
-        <div id="projects" className="px-10">
+        <div id="projects" className="px-10 dark:bg-gray-700">
             <div>Projects</div>
             <div className="grid md:grid-cols-2">
                 {projects.map(project => {

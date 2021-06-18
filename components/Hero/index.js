@@ -4,7 +4,7 @@ import BackgroundAnimation from './BackgroundAnimation'
 
 const Hero = () => {
     return (
-        <section className="grid md:grid-cols-5 mx-auto px-3 sm:px-6 md:px-10 pt-5 dark:bg-gray-600">
+        <section className="grid md:grid-cols-5 mx-auto px-3 sm:px-6 md:px-10 pt-5 dark:bg-gray-700">
             <Introduction />
             <BackgroundAnimation />
         </section>

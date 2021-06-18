@@ -2,7 +2,7 @@ import React from 'react'
 
 const Introduction = () => {
     return (
-        <div className="row-span-full col-start-1 col-span-4 flex flex-col justify-center">
+        <div className="row-span-full col-start-1 col-span-3 flex flex-col justify-center">
             <div className="md:w-5/6 space-y-6">
                 <div className="text-gray-800 dark:text-gray-300 md:text-4xl lg:text-5xl xl:text-6xl text-2xl font-bold tracking-wider font-serif">
                     I Am <br />
@@ -11,7 +11,7 @@ const Introduction = () => {
                 <div className="text-gray-600 dark:text-gray-400 text-sm md:text-lg lg:text-xl xl:text-2xl tracking-wider leading-loose">
                     <div>A Licensed Electronics Engineer by profession.</div>
                     <div>Learning new things and making an idea come to life is my passion.</div>
-                    <div>Creating Web and Mobile application for FUN and and also for MONEY hopefully.</div>
+                    <div>Creating Web and Mobile application for FUN and hopefully make a living out of it.</div>
                 </div>
                 {/* <button
                     type="button"
