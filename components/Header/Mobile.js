@@ -5,14 +5,13 @@ import Mode from './Mode';
 
 const Mobile = () => {
     return (
-
         <div className="w-full px-6 py-4">
             <Disclosure>
                 {({ open }) => (
                     <>
                         <div className="flex flex-row items-center justify-between">
                             <Disclosure.Button className="flex focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-800 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
 
@@ -44,7 +43,6 @@ const Mobile = () => {
                 )}
             </Disclosure>
         </div>
-
     )
 }
 

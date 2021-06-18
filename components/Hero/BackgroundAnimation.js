@@ -6,7 +6,8 @@ const BackgroundAnimation = () => {
   const [ darkMode ] = useContext(ThemeContext)
 
   return (
-    <div className="row-span-full col-start-3 col-span-3 w-5/6 hidden md:block">
+    // <div className="row-span-full col-start-3 col-span-3 w-5/6 hidden md:block">
+    <div className="row-span-full col-start-1 col-span-5 sm:col-start-2 sm:col-span-4 md:col-start-3 md:col-span-3 w-5/6">
       <svg
         className="BgAnimation__svg"
         viewBox="0 0 602 602"
