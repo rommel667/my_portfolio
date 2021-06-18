@@ -2,6 +2,7 @@ import Head from 'next/head'
 import ThemeProvider from '../components/Theme'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
+import Projects from '../components/Projects'
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero />
+        <Projects />
       </Layout>
     </ThemeProvider>
   )

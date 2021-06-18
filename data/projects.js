@@ -1,0 +1,38 @@
+export const projects = [
+    {
+        title: 'Collab&Create Project Management Tool',
+        description: "Description",
+        images: ['/images/project1-1.png', '/images/project1-2.png', '/images/project1-3.png', '/images/project1-4.png'] ,
+        stacks: ['React', 'Node', 'Redux', 'MongoDB', 'GraphQL', 'Apollo', 'Tailwind', 'Docker', 'AWS EC2', 'Firebase'],
+        github: ['https://github.com/rommel667/collab_and_create_client', 'https://github.com/rommel667/collab_and_create_server'],
+        website: 'https://collab-and-create.web.app/',
+        id: 0,
+    },
+    {
+        title: 'InstaLearn Engineering Reviewer for Web',
+        description: "",
+        images: ['/images/project2-1.png', '/images/project2-2.png', '/images/project2-3.png'] ,
+        stacks: ['React', 'Node', 'Redux', 'MongoDB Atlas', 'GraphQL', 'Apollo', 'Material UI', 'Firebase'],
+        github: [],
+        website: 'https://insta-learn.web.app',
+        id: 1,
+    },
+    {
+        title: 'InstaLearn Engineering Reviewer for Mobile',
+        description: "",
+        images: ['/images/2.png', '/images/3.png'] ,
+        stacks: ['React Native', 'MongoDB Atlas', 'Redux', 'MongoDB' ],
+        github: [],
+        website: null,
+        id: 2,
+    },
+    {
+        title: 'Movie Watchlist',
+        description: "",
+        images: ['/images/2.png', '/images/3.png'] ,
+        stacks: ['React', 'React-Bootstrap', 'Redux', 'MovieDB API'],
+        github: ['https://github.com/rommel667/movie_watchlist'],
+        website: 'https://moviewatchlist-codingchallenge.web.app/',
+        id: 3,
+    },
+];
