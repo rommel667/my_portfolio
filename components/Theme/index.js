@@ -1,22 +1,28 @@
-import React, { useEffect, useState } from 'react'
-import Layout from '../Layout'
+import React, { createContext, useEffect, useState } from "react"
 
-const Theme = () => {
+export const ThemeContext = createContext()
 
-    const [darkMode, setDarkMode] = useState(false)
+const ThemeProvider = ({ children }) => {
 
-    useEffect(() => {
-        if(localStorage.getItem("dark")) {
-            setDarkMode(localStorage.getItem("dark"))
-        }
-    }, [])
+  const [ darkMode, setDarkMode ] = useState(false)
 
-    return (
-        <div className={darkMode ? "dark" : ""}>
-            <Layout darkMode={darkMode} setDarkMode={() => setDarkMode(!darkMode)} />
-        </div>
-    )
+  useEffect(() => {
+      if(localStorage.getItem("dark")) {
+          setDarkMode(true)
+      }
+  }, [])
+
+  const toggleMode = () => {
+    setDarkMode(!darkMode)
+  }
+
+  const data = [darkMode, toggleMode]
+
+  return (
+    <ThemeContext.Provider value={data}>
+      {children}
+    </ThemeContext.Provider>
+  )
 }
 
-
-export default Theme
+export default ThemeProvider

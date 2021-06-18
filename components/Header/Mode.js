@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { BsFillBrightnessHighFill, BsMoon } from "react-icons/bs";
+import { ThemeContext } from '../Theme';
 
 
-const Mode = ({ darkMode, setDarkMode }) => {
+
+const Mode = () => {
+
+    const [ darkMode, toggleMode ] = useContext(ThemeContext)
 
     const onSetDarkMode = () => {
-        setDarkMode()
+        toggleMode()
         if(darkMode) {
             localStorage.removeItem("dark")
         } else {

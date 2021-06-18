@@ -4,12 +4,12 @@ import Menu from './Menu'
 import Mode from './Mode'
 
 
-const Header = ({ darkMode, setDarkMode }) => {
+const Header = () => {
     return (
         <div className="flex flex-row p-6 items-center justify-between dark:bg-gray-700">
             <Logo />
             <Menu />
-            <Mode darkMode={darkMode} setDarkMode={setDarkMode} />
+            <Mode />
         </div>
     )
 }
