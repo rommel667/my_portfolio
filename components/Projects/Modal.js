@@ -1,5 +1,5 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useContext, useEffect } from 'react'
+import { Fragment } from 'react'
 
 
 const Modal = ({ open, closeModal, cancel, modalTitle, children, darkMode }) => {

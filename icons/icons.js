@@ -1,6 +1,5 @@
 import {
-    DiBootstrap, DiChrome, DiCss3, DiFirebase, DiGithubBadge, DiHeroku, DiHtml5, DiJsBadge, DiMongodb,
-    DiNginx, DiNodejs, DiNpm, DiPostgresql, DiReact, DiRedis, DiVisualstudio
+    DiBootstrap, DiCss3, DiFirebase, DiGithubBadge, DiHeroku, DiHtml5, DiJsBadge, DiMongodb, DiPostgresql, DiReact, DiRedis, DiVisualstudio
 } from "react-icons/di";
 
 

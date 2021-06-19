@@ -1,8 +1,6 @@
-import Link from 'next/link'
 import React from 'react'
 
 const LinkButtons = ({ github, website }) => {
-    console.log(github);
     return (
         <div className="px-5 my-5 flex justify-between">
         <div>
