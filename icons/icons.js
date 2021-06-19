@@ -1,5 +1,5 @@
 import {
-    DiAws, DiBootstrap, DiChrome, DiCss3, DiDocker, DiFirebase, DiGithubBadge, DiHeroku, DiHtml5, DiJsBadge, DiMongodb,
+    DiBootstrap, DiChrome, DiCss3, DiFirebase, DiGithubBadge, DiHeroku, DiHtml5, DiJsBadge, DiMongodb,
     DiNginx, DiNodejs, DiNpm, DiPostgresql, DiReact, DiRedis, DiVisualstudio
 } from "react-icons/di";
 
@@ -16,7 +16,7 @@ export const icons = {
         component: <DiJsBadge size={25} />,
         color: "text-yellow-300"
     },
-    React: {
+    ReactJS: {
         component: <DiReact size={25} />,
         color: "text-blue-500"
     },
@@ -72,4 +72,16 @@ export const icons = {
         component: <svg width="25" height="25" viewBox="0 0 256 310" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M42.754 244.495l-29.918 6.826V57.565l29.918 6.839v180.091" fill="#F68536"/><path d="M80.082 255.931l-37.328 10.608V42.612l37.328 10.595v202.724M127.966 267.681l-47.884 17.524V23.946l47.884 17.516v226.219M256 245.079l-128.034 64.017V0L256 64.017v181.062" fill="#F68536"/><path d="M102.444 12.763L127.966 0v309.096l-25.522-12.759V12.763M60.325 33.82l19.757-9.878v261.212l-19.757-9.878V33.82M27.016 50.477l15.738-7.869v223.88l-15.738-7.874V50.477M12.836 57.565L0 63.983v181.134l12.836 6.414V57.565" fill="#9D5025"/></svg>,
         color: "text-yellow-500"
     },
+    Heroku: {
+        component: <DiHeroku size={25} />,
+        color: "text-indigo-400"
+    },
+    VSCode: {
+        component: <DiVisualstudio size={25} />,
+        color: "text-blue-400"
+    },
+    GitHub: {
+        component: <DiGithubBadge size={25} />,
+        color: "text-gray-900"
+    }
 }

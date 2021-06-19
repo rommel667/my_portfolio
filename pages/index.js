@@ -3,6 +3,7 @@ import ThemeProvider from '../components/Theme'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
+import Technologies from '../components/Technologies'
 
 export default function Home() {
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Layout>
         <Hero />
         <Projects />
+        <Technologies />
       </Layout>
     </>
   )
