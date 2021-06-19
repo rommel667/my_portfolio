@@ -1,14 +1,13 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
-import { ThemeContext } from '../Theme'
+
 
 const Layout = ({ children }) => {
 
-    const [ darkMode, toggleMode ] = useContext(ThemeContext)
 
     return (
-        <div className={`${darkMode ? "dark" : ""} overscroll-contain scroll-smooth`}>
+        <div className="bg-gray-200 dark:bg-gray-700 overscroll-contain scroll-smooth xl:px-36 lg:px-24 md:px-20 px-5">
             <Header/>
             {children}
             <Footer />

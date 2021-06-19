@@ -6,13 +6,13 @@ import Mobile from './Mobile'
 
 const Header = () => {
     return (
-        <div className="fixed w-full z-20 bg-transparent">
-            <div className="hidden md:flex flex-row p-6 items-center justify-between ">
+        <div className="flex w-10/12 z-20 bg-transparent fixed mt-5">
+            <div className="hidden md:flex flex-row items-center justify-between w-full">
                 <Logo />
                 <Menu />
                 <Mode />
             </div>
-            <div className="md:hidden bg-gray-300 dark:bg-gray-700">
+            <div className="md:hidden w-full">
                 <Mobile />
             </div>
         </div>

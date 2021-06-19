@@ -9,7 +9,7 @@ const Mobile = () => {
     const [show, setShow] = useState(false)
 
     return (
-        <div className="w-full px-6 py-4">
+        <div className="w-full">
             <Disclosure>
                 {({ open }) => (
                     <>
