@@ -1,7 +1,7 @@
 export const technologies = [
     {
         title: "FrontEnd",
-        stacks: ["HTML", "CSS", "Javascript", "React", "Redux", "MaterialUI", "TailwindCSS", "Bootstrap"]
+        stacks: ["HTML", "CSS", "Javascript", "ReactJS", "Redux", "MaterialUI", "TailwindCSS", "Bootstrap"]
     },
     {
         title: "BackEnd",
@@ -9,6 +9,6 @@ export const technologies = [
     },
     {
         title: "Other Tools",
-        stacks: ["VSCode", "Github", "GraphQLPlayground", "ApolloDevTools", "Postman"]
+        stacks: ["VSCode", "GitHub", "GraphQLPlayground", "ChromeDevTools"]
     }
 ]

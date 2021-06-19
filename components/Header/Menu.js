@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Menu = () => {
     return (
-        <ul className="flex space-x-6 text-lg font-semibold text-gray-700 dark:text-gray-500">
+        <ul className="flex space-x-6 text-lg font-semibold text-gray-700 dark:text-gray-300">
             <li>
                 <Link href="#projects">
                     <a className="hover:text-gray-400">Projects</a>

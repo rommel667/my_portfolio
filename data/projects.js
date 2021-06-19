@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: 'Collab&Create',
-        description: "This is a project management tool with real-time update feature to members.",
+        description: "A project management tool for a team. Assign task to members and track project progress. Updating task status made easy with drag and drop feature. Live update on members dashboard upon any change of project status",
         images: ['/images/project1-1.png', '/images/project1-2.png', '/images/project1-3.png', '/images/project1-4.png'] ,
         stacks: ['ReactJS', 'NodeJS', 'Redux', 'MongoDB', 'GraphQL', 'Apollo', 'TailwindCSS', 'Docker', 'AWS_EC2', 'Firebase'],
         github: ['https://github.com/rommel667/collab_and_create_client', 'https://github.com/rommel667/collab_and_create_server'],
@@ -9,8 +9,8 @@ export const projects = [
         id: 0,
     },
     {
-        title: 'InstaLearn Engineering Reviewer for Web',
-        description: "",
+        title: 'InstaLearn Reviewer for Web',
+        description: "An online reviewer for aspiring engineers. Test your knowledge by either taking a pop quiz or a mock exam. Result for each test is saved on database to track students performance and show which subject/s need improvement. Also features a leaderboard for top performers, a chat and a real-time update of new top students.",
         images: ['/images/project2-1.png', '/images/project2-2.png', '/images/project2-3.png'] ,
         stacks: ['ReactJS', 'NodeJS', 'Redux', 'MongoDB', 'GraphQL', 'Apollo', 'MaterialUI', 'Firebase'],
         github: [],
@@ -18,7 +18,7 @@ export const projects = [
         id: 1,
     },
     {
-        title: 'InstaLearn Engineering Reviewer for Mobile',
+        title: 'InstaLearn Reviewer for Mobile',
         description: "",
         images: ['/images/2.png', '/images/3.png'] ,
         stacks: ['ReactNative', 'MongoDB', 'Redux', 'GraphQL', 'Apollo' ],

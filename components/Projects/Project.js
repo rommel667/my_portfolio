@@ -38,7 +38,7 @@ const Project = ({ title, description, images, stacks, github, website }) => {
                     <ImagesCarousel images={images} />
                 </Modal>
             </div>
-            <div className="my-5 flex flex-col items-center">
+            <div className="my-5 flex flex-col items-center px-5">
             <h3 className="text-2xl text-gray-800 dark:text-gray-200">{title}</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">{description}</p>
             
