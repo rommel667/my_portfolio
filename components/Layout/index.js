@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     const [ darkMode, toggleMode ] = useContext(ThemeContext)
 
     return (
-        <div className={darkMode && "dark"}>
+        <div className={`${darkMode ? "dark" : ""} overscroll-contain scroll-smooth`}>
             <Header/>
             {children}
             <Footer />

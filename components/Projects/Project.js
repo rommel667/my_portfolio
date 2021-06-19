@@ -1,17 +1,22 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Image from 'next/image'
 import Modal from './Modal'
 import ImagesCarousel from './ImagesCarousel'
+import Icons from './Icons'
+import Button from './Button'
+import { ThemeContext } from '../Theme'
 
 const Project = ({ title, description, images, stacks, github, website }) => {
 
     const [showButton, setShowButton] = useState(false)
     const [showModal, setShowModal] = useState(false)
+    const [ darkMode, toggleMode ] = useContext(ThemeContext)
 
     return (
-        <div className="w-4/5 mx-auto shadow-md mt-8 rounded-md">
+        <div className="w-full md:w-4/5  shadow-md mt-8 rounded-md transition duration-500 ease-in-out transform  hover:scale-105">
             <div className="relative" onMouseEnter={() => setShowButton(true)} onMouseLeave={() => setShowButton(false)} >
                 <Image
+                    className="rounded-t-md"
                     src={images[0]}
                     alt=""
                     width={800}
@@ -20,21 +25,27 @@ const Project = ({ title, description, images, stacks, github, website }) => {
                     quality={65}
                 />
 
-                <button
-                    onClick={() => setShowModal(true)}
-                    className={`${showButton ? "" : "hidden"} absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 focus:outline-none`}>
-                    More Photos
-                </button>
+                <Button onClick={() => setShowModal(true)} showButton={showButton} />
+
+                
                 <Modal
                     open={showModal}
+                    cancel={() => setShowModal(false)}
                     closeModal={() => setShowModal(false)}
                     modalTitle={title}
+                    darkMode={darkMode}
                 >
                     <ImagesCarousel images={images} />
                 </Modal>
             </div>
+            <div className="my-5 flex flex-col items-center">
+            <h3 className="text-2xl text-gray-800 dark:text-gray-200">{title}</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">{description}</p>
+            
+            </div>
+            
+            <Icons stacks={stacks} />
 
-            <h3>{title}</h3>
         </div>
     )
 }

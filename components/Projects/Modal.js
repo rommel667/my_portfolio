@@ -1,18 +1,20 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment } from 'react'
+import { Fragment, useContext, useEffect } from 'react'
 
-const Modal = ({ open, closeModal, cancel, modalTitle, children }) => {
-  
+
+const Modal = ({ open, closeModal, cancel, modalTitle, children, darkMode }) => {
+
+ 
   return (
     <>
       <Transition appear show={open} as={Fragment}>
         <Dialog
           as="div"
-          className="fixed inset-0 z-10 overflow-y-auto w-screen"
+          className="fixed inset-0 mx-auto z-30 overflow-y-auto w-full lg:w-8/12 "
           onClose={closeModal}
         >
 
-          <div className="min-h-screen px-4 text-center">
+          <div className="min-h-screen px-4 text-center ">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -41,29 +43,33 @@ const Modal = ({ open, closeModal, cancel, modalTitle, children }) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="inline-block w-full  p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+              <div className="inline-block w-full  p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white dark:bg-gray-600 shadow-xl rounded-2xl">
                 <Dialog.Title
                   as="h3"
-                  className="text-lg font-medium leading-6 text-gray-600"
+                  className="text-lg font-medium leading-6 text-gray-600 flex items-center justify-between mb-3"
                 >
-                  {modalTitle}
+
+                  <p>{modalTitle}</p>
+                  <svg onClick={cancel} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
                 </Dialog.Title>
                 <div className="mt-2">
-                  
+
                   {children}
                 </div>
 
 
                 <div className="mt-4 flex gap-2 items-center justify-end">
-                <button
-                  type="button"
-                  className="inline-flex justify-center px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 border border-transparent rounded-md hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-                  onClick={cancel}
-            
-                >
-                  Cancel
-                </button>
-                  
+                  <button
+                    type="button"
+                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 border border-transparent rounded-md hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    onClick={cancel}
+
+                  >
+                    Cancel
+                  </button>
+
                 </div>
               </div>
             </Transition.Child>
